@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShareInvestor Simple Product Showcase">
     <title>ShareInvestor Simple Page</title>
+    
+    <!-- CSS Dependencies -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Prompt:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -54,8 +65,8 @@
                             <table class="table table-dark">
                                 <thead>
                                     <tr>
-                                        <td>Category</td>
-                                        <td>Feature</td>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Feature</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -90,11 +101,11 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                            Optional Equipment
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Additional Features
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSpecs">
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionSpecs">
                         <div class="accordion-body">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lacus eget massa tempus tempus. Integer efficitur libero quam, ut maximus sem dapibus eu. Aliquam erat volutpat. Aenean rhoncus gravida suscipit. Aliquam erat volutpat. Proin tristique sagittis ultrices. Cras risus sapien, accumsan eu sodales eu, sollicitudin ut velit. Etiam varius nisl nec elit fringilla, in pharetra eros elementum. In vel sapien mi. In erat velit, euismod quis tempus vitae, volutpat ac orci.
@@ -106,6 +117,332 @@
         </div>
     </section>
 
+    <!-- Q2 Products Section with Tabs -->
+    <section class="products-section">
+        <div class="container text-center d-flex justify-content-center align-items-center flex-column">
+            <h2 class="products-title">Our Products</h2>
+            <div class="w-100">
+                <!-- Product Navigation Tabs -->
+                <div class="d-flex justify-content-center align-items-center mb-3">
+                    <ul class="nav nav-underline" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="bus-tab" data-bs-toggle="tab" data-bs-target="#bus-tab-pane" type="button" role="tab" aria-controls="bus-tab-pane" aria-selected="true">Bus</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="trucks-tab" data-bs-toggle="tab" data-bs-target="#trucks-tab-pane" type="button" role="tab" aria-controls="trucks-tab-pane" aria-selected="false">Trucks</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="passenger-tab" data-bs-toggle="tab" data-bs-target="#passenger-tab-pane" type="button" role="tab" aria-controls="passenger-tab-pane" aria-selected="false">Passenger</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="transporter-tab" data-bs-toggle="tab" data-bs-target="#transporter-tab-pane" type="button" role="tab" aria-controls="transporter-tab-pane" aria-selected="false">Transporter</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="forklift-tab" data-bs-toggle="tab" data-bs-target="#forklift-tab-pane" type="button" role="tab" aria-controls="forklift-tab-pane" aria-selected="false">Forklift</button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Tab Content -->
+                <div class="tab-content" id="productTabContent">
+                    <!-- Bus Tab -->
+                    <div class="tab-pane fade show active" id="bus-tab-pane" role="tabpanel" aria-labelledby="bus-tab" tabindex="0">
+                        <div class="splide" id="busSlider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">01</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-1.png" class="d-block" alt="12 Meter EV Bus">
+                                            </div>
+                                            <h4>12 Meter EV Bus</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">02</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-2.png" class="d-block" alt="10 Meter EV Bus">
+                                            </div>
+                                            <h4>Tractor Head</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">03</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-3.png" class="d-block" alt="8 Meter EV Bus">
+                                            </div>
+                                            <h4>Light Duty Truck</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">04</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-2.png" class="d-block" alt="Widebody Mining Truck">
+                                            </div>
+                                            <h4>Widebody Mining Truck</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">05</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-2.png" class="d-block" alt="Tractor Head">
+                                            </div>
+                                            <h4>Tractor Head</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Trucks Tab -->
+                    <div class="tab-pane fade" id="trucks-tab-pane" role="tabpanel" aria-labelledby="trucks-tab" tabindex="0">
+                        <div class="splide" id="trucksSlider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">01</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-2.png" class="d-block" alt="Tractor Head">
+                                            </div>
+                                            <h4>Tractor Head</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">02</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-3.png" class="d-block" alt="Light Duty Truck">
+                                            </div>
+                                            <h4>Light Duty Truck</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">03</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-4.png" class="d-block" alt="Widebody Mining Truck">
+                                            </div>
+                                            <h4>Widebody Mining Truck</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Passenger Tab -->
+                    <div class="tab-pane fade" id="passenger-tab-pane" role="tabpanel" aria-labelledby="passenger-tab" tabindex="0">
+                        <div class="splide" id="passengerSlider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">01</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-3.png" class="d-block" alt="Passenger Vehicle">
+                                            </div>
+                                            <h4>Passenger Vehicle</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Transporter Tab -->
+                    <div class="tab-pane fade" id="transporter-tab-pane" role="tabpanel" aria-labelledby="transporter-tab" tabindex="0">
+                        <div class="splide" id="transporterSlider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">01</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-2.png" class="d-block" alt="Heavy Transporter">
+                                            </div>
+                                            <h4>Heavy Transporter</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Forklift Tab -->
+                    <div class="tab-pane fade" id="forklift-tab-pane" role="tabpanel" aria-labelledby="forklift-tab" tabindex="0">
+                        <div class="splide" id="forkliftSlider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <p class="card-counter">01</p>
+                                            </div>
+                                            <div class="card-img-wrapper">
+                                                <img src="./Assets for Q2/truck-1.png" class="d-block" alt="Electric Forklift">
+                                            </div>
+                                            <h4>Electric Forklift</h4>
+                                            <button class="btn btn-primary card-hover-btn">
+                                                Read More
+                                                <span class="btn-circle-icon">
+                                                    <i data-feather="arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- All Products Button -->
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#allProductsModal">
+                All Products
+                <span class="btn-circle-icon">
+                    <i data-feather="arrow-right"></i>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <!-- JavaScript Dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        feather.replace();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const splideOptions = {
+                perPage: 4,
+                gap: 0,
+                pagination: true,
+                arrows: false,
+                classes: {
+                    pagination: 'splide__pagination',
+                    page: 'splide__pagination__page',
+                },
+                breakpoints: {
+                    992: { perPage: 2, gap: 0 },
+                    576: { perPage: 1, gap: 0 }
+                }
+            };
+
+            const sliderIds = ['busSlider', 'trucksSlider', 'passengerSlider', 'transporterSlider', 'forkliftSlider'];
+            const sliders = {};
+            
+            sliderIds.forEach(id => {
+                const slider = new Splide(`#${id}`, splideOptions);
+                
+                slider.on('pagination:mounted', function(data) {
+                    data.list.classList.add('splide__pagination--custom');
+                    
+                    data.items.forEach(function(item) {
+                        item.button.setAttribute('aria-label', 'Go to slide ' + (item.page + 1));
+                        
+                        item.button.addEventListener('click', function() {
+                            this.classList.add('clicked');
+                            setTimeout(() => {
+                                this.classList.remove('clicked');
+                            }, 300);
+                        });
+                    });
+                });
+                
+                slider.mount();
+                sliders[id] = slider;
+            });
+        });
+    </script>
 </body>
 </html>
