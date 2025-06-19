@@ -3,7 +3,7 @@
    ========================================================================== */
 :root {
     /* Colors */
-    --color-primary: #5cc7c1;
+    --color-primary: rgb(92, 199, 193);
     --color-primary-hover: #4ab0a1;
     --color-border: #e0e0e0;
     --color-table-bg: #000;
@@ -40,7 +40,7 @@ body {
 }
 
 /* ==========================================================================
-   Q1 Accordion Section
+   Q1: Accordion Section
    ========================================================================== */
 .accordion-section {
     background-image: url("./Assets for Q1/img-1.png");
@@ -92,7 +92,7 @@ body {
 }
 
 /* ==========================================================================
-   Q2 Products Section
+   Q2: Products Section
    ========================================================================== */
 .products-section {
     background-image: url("./Assets for Q2/img-1.png");
@@ -231,6 +231,131 @@ body {
 }
 
 /* ==========================================================================
+   Q3: Header Section
+   ========================================================================== */
+.header-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 250px 0 0px;
+    background-image: url("./Assets for Q3/img-1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+.header-highlights {
+    position: relative;
+    overflow: visible;
+    margin-top: -50px;
+    padding: 200px 100px 30px;
+    background-image: url("./Assets for Q3/background.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.header-highlights-title {
+    font-family: var(--font-family-title);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 12px;
+}
+
+.header-highlights-description {
+    font-size: 14px;
+    color: var(--color-black);
+}
+
+.header-highlights .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: transform var(--transition-standard);
+}
+
+.header-highlights .card .card-body h3 {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-black);
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.header-highlights .card .card-body p {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.gradient-circle-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle at center, rgba(222, 255, 197, 0.7) 20%, transparent 55%);
+    z-index: -1;
+}
+
+.header-title {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-title h1 {
+    font-family: var(--font-family-title);
+    font-size: 42px;
+    font-weight: 300;
+    color: var(--color-black);
+    margin-bottom: 16px;
+    width: 90%;
+}
+
+.header-title h1 span {
+    color: var(--color-primary);
+}
+
+.header-title p {
+    font-size: 14px;
+    color: var(--color-black);
+    margin-bottom: 24px;
+    width: 80%;
+}
+
+.header-section .img-fluid {
+    position: absolute;
+}
+
+.header-section .img-fluid:nth-child(1) {
+    bottom: 10%;
+    left: 5%;
+}
+
+.header-section .img-fluid:nth-child(2) {
+    top: 18%;
+    left: 25%;
+}
+
+.header-section .img-fluid:nth-child(3) {
+    top: 25%;
+    right: 25%;
+}
+
+.header-section .img-fluid:nth-child(4) {
+    bottom: 0;
+    right: 5%;
+}
+
+/* ==========================================================================
    Button Styles
    ========================================================================== */
 .btn-primary {
@@ -243,7 +368,7 @@ body {
     padding: 12px 24px;
     border-radius: 999px;
     font-size: 14px;
-    transition: background-color var(--transition-standard), transform var(--transition-standard);
+    white-space: nowrap;
 }
 
 .btn-primary:hover {
@@ -321,22 +446,45 @@ body {
     .accordion-section {
         background-position: center top;
     }
+    
+    .header-highlights {
+        padding: 150px 12px 30px;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    .header-title {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .header-title h1 {
+        font-size: 22px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .header-title p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .header-hero {
+        padding: 150px 0 0;
+    }
 }
 
 @media (max-width: 768px) {
     .btn-primary {
         padding: 10px 20px;
-        font-size: 13px;
     }
 }
 
 @media (max-width: 576px) {
     .card-img-wrapper {
-        height: 200px;
-    }
-    
-    .products-section .card h4 {
-        margin: 20px 0 50px;
+        height: 300px;
     }
 }
 
