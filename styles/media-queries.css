@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 992px) {
+    .products-section {
+        background-position: center bottom;
+    }
+    
+    .accordion-section {
+        background-position: center top;
+    }
+    
+    .header-highlights {
+        padding: 150px 12px 30px;
+    }
+
+    .img-fluid {
+        display: none;
+    }
+
+    .header-title {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .header-title h1 {
+        font-size: 22px;
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .header-title p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .header-hero {
+        padding: 150px 0 0;
+    }
+
+    .client-section {
+        padding: 50px 0px;
+    }
+
+    .client-section .card-wrapper {
+        flex-direction: column;
+    }
+
+    .client-section .card-wrapper .card {
+        height: auto;
+        min-height: 400px;
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client-section .card-wrapper .card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary {
+        padding: 10px 20px;
+    }
+    
+    .client-section .card-wrapper .card {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-wrapper {
+        height: 300px;
+    }
+    
+    .client-section .card-wrapper .card {
+        min-height: 300px;
+    }
+}

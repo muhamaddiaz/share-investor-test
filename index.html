@@ -19,109 +19,92 @@
     <script src="https://unpkg.com/feather-icons"></script>
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- ======================================================================== 
-         Q1: Accordion Section
+         Q3: Header & Financial Highlights
          ======================================================================== -->
-    <section class="accordion-section" id="specifications">
-        <div class="container pt-5 pb-5">
-            <div class="accordion border-0" id="accordionSpecs">
-                <!-- Standard Equipment -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Standard Equipment
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSpecs">
-                        <div class="accordion-body">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lacus eget massa tempus tempus. Integer efficitur libero quam, ut maximus sem dapibus eu. Aliquam erat volutpat. Aenean rhoncus gravida suscipit. Aliquam erat volutpat. Proin tristique sagittis ultrices. Cras risus sapien, accumsan eu sodales eu, sollicitudin ut velit. Etiam varius nisl nec elit fringilla, in pharetra eros elementum. In vel sapien mi. In erat velit, euismod quis tempus vitae, volutpat ac orci.
-                            </p>
-                        </div>
+    <section class="header-section" id="about">
+        <div class="container">
+            <!-- Hero Banner -->
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <div class="header-hero">
+                    <img src="./Assets for Q3/img-2.png" class="img-fluid" alt="VKTR Vehicle Image 1">
+                    <img src="./Assets for Q3/img-3.png" class="img-fluid" alt="VKTR Vehicle Image 2">
+                    <img src="./Assets for Q3/img-4.png" class="img-fluid" alt="VKTR Header Image"> 
+                    <img src="./Assets for Q3/img-5.png" class="img-fluid" alt="VKTR Header Image">
+
+                    <div class="header-title">
+                        <h1>Fast-tracking the electrification of sustainable <span>transportation</span></h1>
+                        <p>Lorem Ipsum dolor sit amet, consectur adipiscing elit, sed do elusmod tempor incidunt ut labore et dolore magna aliqua.</p>
                     </div>
+
+                    <button type="button" class="btn btn-primary d-block mx-auto mt-4" data-bs-toggle="modal" data-bs-target="#contactUsModal">
+                        Why Invest in VKTR 
+                        <span class="btn-circle-icon">
+                            <i data-feather="arrow-right"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Financial Highlights -->
+            <div class="header-highlights">
+                <div class="text-center mb-5">
+                    <div class="header-highlights-title">
+                        <h2>Financial Highlights</h2>
+                        <h2>FY 2024</h2>
+                    </div>
+                    <p class="header-highlights-description">In Million Rupiah</p>
                 </div>
                 
-                <!-- Optional Equipment -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Optional Equipment
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSpecs">
-                        <div class="accordion-body">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lacus eget massa tempus tempus. Integer efficitur libero quam, ut maximus sem dapibus eu. Aliquam erat volutpat. Aenean rhoncus gravida suscipit. Aliquam erat volutpat. Proin tristique sagittis ultrices. Cras risus sapien, accumsan eu sodales eu, sollicitudin ut velit. Etiam varius nisl nec elit fringilla, in pharetra eros elementum. In vel sapien mi. In erat velit, euismod quis tempus vitae, volutpat ac orci.
-                            </p>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center align-items-center g-4 text-center">
+                    <!-- Total Revenue -->
+                    <div class="col">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <img src="./Assets for Q3/icon-1.png" alt="Icon 1">
+                                <h3>Total Revenue</h3>
+                                <p class="card-text">1,061,862</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Total Liabilities -->
+                    <div class="col">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <img src="./Assets for Q3/icon-2.png" alt="Icon 2">
+                                <h3>Total Liabilitas</h3>
+                                <p class="card-text">520,502</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Total Asset -->
+                    <div class="col">
+                        <div class="card p-4">
+                            <div class="card-body">
+                                <img src="./Assets for Q3/icon-3.png" alt="Icon 3">
+                                <h3>Total Asset</h3>
+                                <p class="card-text">1,668,360</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Battery Capacity Configuration -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Charge Battery Capacity Configuration System
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSpecs">
-                        <div class="accordion-body">
-                            <table class="table table-dark">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Category</th>
-                                        <th scope="col">Feature</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Energy Type</td>
-                                        <td class="fw-lighter">Diesel, LPG, Gasoline, Electric (Battery)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Load Capacity</td>
-                                        <td class="fw-lighter">1 - 25 tons (depending on the model)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lift Height</td>
-                                        <td class="fw-lighter">Up to 6 meters (standard), can be higher with special mast</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mast Type</td>
-                                        <td class="fw-lighter">2-stage, 3-stage (Full Free Lift Mast)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Transmission</td>
-                                        <td class="fw-lighter">Manual / Automatic / Hydrostatic Drive</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brake System</td>
-                                        <td class="fw-lighter">Drum / Brake</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+
+                <!-- View All Button -->
+                <div class="d-flex justify-content-center align-items-center mt-5">
+                    <button type="button" class="btn btn-primary mt-3">
+                        View All
+                        <span class="btn-circle-icon">
+                            <i data-feather="arrow-right"></i>
+                        </span>
+                    </button>
                 </div>
-                
-                <!-- Additional Features -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Additional Features
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionSpecs">
-                        <div class="accordion-body">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lacus eget massa tempus tempus. Integer efficitur libero quam, ut maximus sem dapibus eu. Aliquam erat volutpat. Aenean rhoncus gravida suscipit. Aliquam erat volutpat. Proin tristique sagittis ultrices. Cras risus sapien, accumsan eu sodales eu, sollicitudin ut velit. Etiam varius nisl nec elit fringilla, in pharetra eros elementum. In vel sapien mi. In erat velit, euismod quis tempus vitae, volutpat ac orci.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+                <div class="gradient-circle-bg"></div>
             </div>
         </div>
     </section>
@@ -406,93 +389,6 @@
     </section>
 
     <!-- ======================================================================== 
-         Q3: Header & Financial Highlights
-         ======================================================================== -->
-    <section class="header-section" id="about">
-        <div class="container">
-            <!-- Hero Banner -->
-            <div class="d-flex justify-content-center align-items-center flex-column">
-                <div class="header-hero">
-                    <img src="./Assets for Q3/img-2.png" class="img-fluid" alt="VKTR Vehicle Image 1">
-                    <img src="./Assets for Q3/img-3.png" class="img-fluid" alt="VKTR Vehicle Image 2">
-                    <img src="./Assets for Q3/img-4.png" class="img-fluid" alt="VKTR Header Image"> 
-                    <img src="./Assets for Q3/img-5.png" class="img-fluid" alt="VKTR Header Image">
-
-                    <div class="header-title">
-                        <h1>Fast-tracking the electrification of sustainable <span>transportation</span></h1>
-                        <p>Lorem Ipsum dolor sit amet, consectur adipiscing elit, sed do elusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-                    </div>
-
-                    <button type="button" class="btn btn-primary d-block mx-auto mt-4" data-bs-toggle="modal" data-bs-target="#contactUsModal">
-                        Why Invest in VKTR 
-                        <span class="btn-circle-icon">
-                            <i data-feather="arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Financial Highlights -->
-            <div class="header-highlights">
-                <div class="text-center mb-5">
-                    <div class="header-highlights-title">
-                        <h2>Financial Highlights</h2>
-                        <h2>FY 2024</h2>
-                    </div>
-                    <p class="header-highlights-description">In Million Rupiah</p>
-                </div>
-                
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center align-items-center g-4 text-center">
-                    <!-- Total Revenue -->
-                    <div class="col">
-                        <div class="card p-4">
-                            <div class="card-body">
-                                <img src="./Assets for Q3/icon-1.png" alt="Icon 1">
-                                <h3>Total Revenue</h3>
-                                <p class="card-text">1,061,862</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Total Liabilities -->
-                    <div class="col">
-                        <div class="card p-4">
-                            <div class="card-body">
-                                <img src="./Assets for Q3/icon-2.png" alt="Icon 2">
-                                <h3>Total Liabilitas</h3>
-                                <p class="card-text">520,502</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Total Asset -->
-                    <div class="col">
-                        <div class="card p-4">
-                            <div class="card-body">
-                                <img src="./Assets for Q3/icon-3.png" alt="Icon 3">
-                                <h3>Total Asset</h3>
-                                <p class="card-text">1,668,360</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- View All Button -->
-                <div class="d-flex justify-content-center align-items-center mt-5">
-                    <button type="button" class="btn btn-primary mt-3">
-                        View All
-                        <span class="btn-circle-icon">
-                            <i data-feather="arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-
-                <div class="gradient-circle-bg"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======================================================================== 
          Q4: Client Section
          ======================================================================== -->
     <section class="client-section">
@@ -543,58 +439,251 @@
             </div>
         </div>
     </section>
+
+    <!-- ======================================================================== 
+         Q1: Accordion Section
+         ======================================================================== -->
+         <section class="accordion-section" id="specifications">
+            <div class="container pt-5 pb-5">
+                <div class="accordion border-0" id="accordionSpecs">
+                    <!-- Standard Equipment -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Standard Equipment
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSpecs">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lacus eget massa tempus tempus. Integer efficitur libero quam, ut maximus sem dapibus eu. Aliquam erat volutpat. Aenean rhoncus gravida suscipit. Aliquam erat volutpat. Proin tristique sagittis ultrices. Cras risus sapien, accumsan eu sodales eu, sollicitudin ut velit. Etiam varius nisl nec elit fringilla, in pharetra eros elementum. In vel sapien mi. In erat velit, euismod quis tempus vitae, volutpat ac orci.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Optional Equipment -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Optional Equipment
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSpecs">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lacus eget massa tempus tempus. Integer efficitur libero quam, ut maximus sem dapibus eu. Aliquam erat volutpat. Aenean rhoncus gravida suscipit. Aliquam erat volutpat. Proin tristique sagittis ultrices. Cras risus sapien, accumsan eu sodales eu, sollicitudin ut velit. Etiam varius nisl nec elit fringilla, in pharetra eros elementum. In vel sapien mi. In erat velit, euismod quis tempus vitae, volutpat ac orci.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Battery Capacity Configuration -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Charge Battery Capacity Configuration System
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSpecs">
+                            <div class="accordion-body">
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Category</th>
+                                            <th scope="col">Feature</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Energy Type</td>
+                                            <td class="fw-lighter">Diesel, LPG, Gasoline, Electric (Battery)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Load Capacity</td>
+                                            <td class="fw-lighter">1 - 25 tons (depending on the model)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lift Height</td>
+                                            <td class="fw-lighter">Up to 6 meters (standard), can be higher with special mast</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mast Type</td>
+                                            <td class="fw-lighter">2-stage, 3-stage (Full Free Lift Mast)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transmission</td>
+                                            <td class="fw-lighter">Manual / Automatic / Hydrostatic Drive</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brake System</td>
+                                            <td class="fw-lighter">Drum / Brake</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Features -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Additional Features
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionSpecs">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id lacus eget massa tempus tempus. Integer efficitur libero quam, ut maximus sem dapibus eu. Aliquam erat volutpat. Aenean rhoncus gravida suscipit. Aliquam erat volutpat. Proin tristique sagittis ultrices. Cras risus sapien, accumsan eu sodales eu, sollicitudin ut velit. Etiam varius nisl nec elit fringilla, in pharetra eros elementum. In vel sapien mi. In erat velit, euismod quis tempus vitae, volutpat ac orci.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- ======================================================================== 
+         Q5: Map Section
+         ======================================================================== -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-wrapper p-5">
+                <div class="map-image position-relative">
+                    <img src="./Assets for Q5/map.png" draggable="false" class="img-fluid" alt="World Map" id="worldMap">
+                    
+                    <!-- Interactive hotspots -->
+                    <div class="map-hotspot map-hotspot-medan" 
+                         data-location="medan" 
+                         data-location-title="Medan"
+                    >
+                    </div>
+                    <div class="map-hotspot map-hotspot-java" 
+                         data-location="central-java" 
+                         data-location-title="Central Java"
+                    >
+                    </div>
+                    <div class="map-hotspot map-hotspot-borneo" 
+                         data-location="west-borneo" 
+                         data-location-title="West Borneo"
+                    >
+                    </div>
+                    
+                    <!-- Info cards for locations (hidden by default) -->
+                    <div class="map-location-cards">
+                        <div class="map-info-card" id="medan-card">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Medan</h5>
+                                    <button type="button" class="close-info-card" aria-label="Close">
+                                        <i data-feather="x"></i>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt et Labore et dolone magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-info-card" id="central-java-card">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Jawa Tengah</h5>
+                                    <button type="button" class="close-info-card" aria-label="Close">
+                                        <i data-feather="x"></i>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt et Labore et dolone magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="map-info-card" id="west-borneo-card">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h5 class="mb-0">Kalimantan Barat</h5>
+                                    <button type="button" class="close-info-card" aria-label="Close">
+                                        <i data-feather="x"></i>
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt et Labore et dolone magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-legend">
+                    <div class="content">
+                        <span class="map-hotspot-display map-hotspot-display-medan"></span> Medan
+                    </div>
+                    <div class="content">
+                        <span class="map-hotspot-display map-hotspot-display-java"></span> Central Java
+                    </div>
+                    <div class="content">
+                        <span class="map-hotspot-display map-hotspot-display-borneo"></span> West Borneo
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-map-wrapper">
+                <img src="./Assets for Q5/map.png" draggable="false" style="width: 100%;" alt="World Mobile Map" id="worldMobileMap">
+
+                <div class="map-mobile-legend">
+                   <div class="mobile-map-info-card">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">MEDAN</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6>Lorem Ipsum</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt et Labore et dolone magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="mobile-map-info-card">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center"> 
+                                <h5 class="mb-0">KALIMANTAN BARAT</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6>Lorem Ipsum</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt et Labore et dolone magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="mobile-map-info-card">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">JAWA TENGAH</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6>Lorem Ipsum</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt et Labore et dolone magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- ======================================================================== 
          JavaScript Dependencies
          ======================================================================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    
-    <!-- Custom JavaScript -->
+    <script src="js/splide-init.js"></script>
+    <script src="js/map-hotspot.js"></script>
+
     <script>
         feather.replace();
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const splideOptions = {
-                perPage: 4,
-                gap: 0,
-                pagination: true,
-                arrows: false,
-                classes: {
-                    pagination: 'splide__pagination',
-                    page: 'splide__pagination__page',
-                },
-                breakpoints: {
-                    992: { perPage: 2, gap: 0 },
-                    576: { perPage: 1, gap: 0 }
-                }
-            };
-
-            const sliderIds = ['busSlider', 'trucksSlider', 'passengerSlider', 'transporterSlider', 'forkliftSlider'];
-            const sliders = {};
-            
-            sliderIds.forEach(id => {
-                const slider = new Splide(`#${id}`, splideOptions);
-                
-                slider.on('pagination:mounted', function(data) {
-                    data.list.classList.add('splide__pagination--custom');
-                    
-                    data.items.forEach(function(item) {
-                        item.button.setAttribute('aria-label', 'Go to slide ' + (item.page + 1));
-                        
-                        item.button.addEventListener('click', function() {
-                            this.classList.add('clicked');
-                            setTimeout(() => {
-                                this.classList.remove('clicked');
-                            }, 300);
-                        });
-                    });
-                });
-                
-                slider.mount();
-                sliders[id] = slider;
-            });
-        });
     </script>
 </body>
 </html>

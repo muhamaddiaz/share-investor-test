@@ -1,0 +1,21 @@
+/* Main stylesheet that imports all modular CSS files */
+
+/* Import variables */
+@import url('styles/variables.css');
+
+/* Import global styles */
+@import url('styles/global.css');
+
+/* Import section styles */
+@import url('styles/accordion-section.css');
+@import url('styles/products-section.css');
+@import url('styles/header-section.css');
+@import url('styles/client-section.css');
+@import url('styles/map-section.css');
+
+/* Import component styles */
+@import url('styles/buttons.css');
+@import url('styles/splide-carousel.css');
+
+/* Import responsive styles */
+@import url('styles/media-queries.css');

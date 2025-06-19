@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+.btn-primary {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-button-primary);
+    color: var(--color-black);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-button-primary-hover) !important;
+    color: var(--color-black) !important;
+}
+
+.btn-primary:active {
+    background-color: var(--color-button-primary-hover);
+    color: var(--color-black);
+    transform: scale(0.98);
+}
+
+.btn-circle-icon {
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--color-button-accent);
+    color: var(--color-black);
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+}

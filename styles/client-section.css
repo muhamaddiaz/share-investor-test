@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Q4: Client Section
+   ========================================================================== */
+
+.client-section {
+    background-image: url("../Assets for Q4/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 150px;
+}
+
+.client-section .card {
+    flex: 1;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    transition: transform var(--transition-standard);
+}
+
+.client-section .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-section .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.client-section .card .card-body > h4 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: transform var(--transition-standard);
+}
+
+.client-section .card:hover .card-body > h4 {
+    display: none;
+}
+
+.client-section .card-hover-description {
+    text-align: center;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    opacity: 0;
+    transition: all var(--transition-standard);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0));
+    padding: 100px 20px 50px;
+    border-bottom: 8px solid var(--color-primary);
+}
+
+.client-section .card-hover-description h4 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 12px;
+}
+
+.client-section .card-hover-description p {
+    color: var(--color-white);
+    font-size: 14px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.client-section .card:hover .card-hover-description {
+    opacity: 1;
+    bottom: 0;
+}
+
+.client-section .card .btn-outline-light {
+    font-size: 14px;
+}
+
+.client-section .card:nth-child(1) {
+    background-image: url("../Assets for Q4/img-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.client-section .card:nth-child(2) {
+    background-image: url("../Assets for Q4/img-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.client-section .card:nth-child(3) {
+    background-image: url("../Assets for Q4/img-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.client-section .card-radius-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.client-section .card-radius-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.client-section .btn-client {
+    background: linear-gradient(to right, #c3c38c, #89fff3);
+    color: var(--color-black);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+}

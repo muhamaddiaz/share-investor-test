@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Q1: Accordion Section
+   ========================================================================== */
+.accordion-section {
+    background-image: url("../Assets for Q1/img-1.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+}
+
+.accordion,
+.accordion-item,
+.accordion-button {
+    border: none;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.accordion-button {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 0.5rem;
+}
+
+/* Table Styles */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--color-table-bg);
+}
+
+.table td,
+.table th {
+    padding: 14px 24px;
+    background-color: var(--color-table-bg);
+    border-bottom: none;
+}
