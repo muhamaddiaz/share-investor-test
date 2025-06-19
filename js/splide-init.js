@@ -1,5 +1,3 @@
-// splide-init.js
-// Initialize Splide sliders for all product sections
 window.addEventListener('DOMContentLoaded', () => {
     const splideOptions = {
         perPage: 4,

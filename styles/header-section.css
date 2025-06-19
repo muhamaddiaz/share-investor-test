@@ -8,7 +8,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 250px 0 0px;
-    background-image: url("../Assets for Q3/img-1.png");
+    background-image: url("../assets/Assets for Q3/img-1.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 150px;
@@ -19,7 +19,7 @@
     overflow: visible;
     margin-top: -50px;
     padding: 200px 100px 30px;
-    background-image: url("../Assets for Q3/background.png");
+    background-image: url("../assets/Assets for Q3/background.png");
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
