@@ -203,6 +203,10 @@
   background: transparent;
 }
 
+.map-legend-hotspot {
+  cursor: pointer;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
