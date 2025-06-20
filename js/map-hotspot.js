@@ -5,7 +5,15 @@ window.addEventListener('DOMContentLoaded', () => {
     const closeButtons = document.querySelectorAll('.close-info-card');
 
     const closeAllInfoCards = () => {
-        infoCards.forEach(card => card.classList.remove('active'));
+        infoCards.forEach(card => {
+            card.classList.remove('active');
+
+            const existingLine = card.querySelector('.dynamic-line');
+
+            if (existingLine) {
+                existingLine.remove();
+            }
+        });
     };
 
     const showInfoCard = (location) => {
@@ -26,8 +34,43 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 infoCard.style.top = `${top - 20}px`;
                 infoCard.style.left = `${left + 70}px`;
+                
+                createDynamicLine(infoCard, mapHotspot, mapRect);
             }
         }
+    };
+
+    const createDynamicLine = (infoCard, hotspot) => {
+        const existingLine = infoCard.querySelector('.dynamic-line');
+        if (existingLine) {
+            existingLine.remove();
+        }
+
+        const line = document.createElement('div');
+        line.className = 'dynamic-line';
+        line.style.cssText = `
+            position: absolute;
+            background-color: red;
+            height: 2px;
+            z-index: -1;
+            pointer-events: none;
+        `;
+        
+        const mapContainer = document.querySelector('.map-image');
+        const mapContainerRect = mapContainer.getBoundingClientRect();
+        
+        const hotspotRect = hotspot.getBoundingClientRect();
+        const hotspotCenterX = (hotspotRect.left + hotspotRect.right) / 2 - mapContainerRect.left;
+        
+        const cardLeftRelative = hotspotRect.left - mapContainerRect.left + 55;
+        
+        const lineWidth = Math.abs(cardLeftRelative - hotspotCenterX);
+        
+        line.style.left = `-${lineWidth}px`;
+        line.style.top = `34px`;
+        line.style.width = `${lineWidth}px`;
+        
+        infoCard.appendChild(line);
     };
 
     document.addEventListener('click', e => {

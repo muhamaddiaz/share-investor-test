@@ -60,17 +60,6 @@
     z-index: 30;
 }
 
-.map-info-card::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: -40px;
-    width: 40px;
-    height: 2px;
-    background-color: red;
-    z-index: -1;
-}
-
 .map-info-card.active {
     opacity: 1;
     visibility: visible;
