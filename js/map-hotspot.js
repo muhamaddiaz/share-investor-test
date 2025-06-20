@@ -55,14 +55,22 @@ window.addEventListener('DOMContentLoaded', () => {
             z-index: -1;
             pointer-events: none;
         `;
-        
+
+        let offset = 60;
+
+        if (window.innerWidth >= 1400) {
+            offset = 50;
+        } else if (window.innerWidth >= 1200) {
+            offset = 55;
+        } 
+
         const mapContainer = document.querySelector('.map-image');
         const mapContainerRect = mapContainer.getBoundingClientRect();
         
         const hotspotRect = hotspot.getBoundingClientRect();
         const hotspotCenterX = (hotspotRect.left + hotspotRect.right) / 2 - mapContainerRect.left;
         
-        const cardLeftRelative = hotspotRect.left - mapContainerRect.left + 55;
+        const cardLeftRelative = hotspotRect.left - mapContainerRect.left + offset;
         
         const lineWidth = Math.abs(cardLeftRelative - hotspotCenterX);
         
